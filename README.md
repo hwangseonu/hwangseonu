@@ -25,7 +25,6 @@
 
 [![Gin-Restful](https://img.shields.io/badge/GinRestful-29BEB0?style=for-the-badge&logo=go&logoColor=fff)](https://github.com/hwangseonu/gin-restful)  
 [![KIWITALK](https://img.shields.io/badge/KIWITALK-F0DB4F?style=for-the-badge&logo=JavaScript&logoColor=fff)](https://github.com/KiwiTalk/KiwiTalk)  
-[![BILLBOARDOO](https://img.shields.io/badge/BILLBOARDOO-EF4444?style=for-the-badge&logo=React&logoColor=fff)](https://github.com/hwangseonu/libre-billboardoo-frontend)  
 
 # Skills
 
