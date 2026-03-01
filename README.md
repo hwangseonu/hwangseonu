@@ -18,11 +18,9 @@
 취미는 마술🪄, 본업은 프로그래머💻  
 배우고 싶은 것이 많은 학생입니다.
 
-# Stats
-[![Hwangseonu's GitHub stats](https://github-readme-stats.vercel.app/api?username=hwangseonu&show_icons=true&theme=codeSTACKr)](https://github.com/hwangseonu)
-
 # Projects
 
+[![iloa.gg](https://img.shields.io/badge/iloa.gg-50CE97?style=for-the-badge&logoColor=fff)](https://iloa.gg)  
 [![Gin-Restful](https://img.shields.io/badge/GinRestful-29BEB0?style=for-the-badge&logo=go&logoColor=fff)](https://github.com/hwangseonu/gin-restful)  
 [![KIWITALK](https://img.shields.io/badge/KIWITALK-F0DB4F?style=for-the-badge&logo=JavaScript&logoColor=fff)](https://github.com/KiwiTalk/KiwiTalk)  
 
