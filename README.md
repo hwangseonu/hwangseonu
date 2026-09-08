@@ -5,12 +5,6 @@
         "kor": "황선우",
         "eng": "hwangseonu",
         "jpn": "善宇(ゼン-ウ)"
-    },
-    "birthday": {
-        "year": 2002,
-        "month": 4,
-        "day": 15,
-        "full": "2002.04.15"
     }
   }
 ```
