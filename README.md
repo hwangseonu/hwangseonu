@@ -9,9 +9,6 @@
 }
 ```
 
-취미는 마술🪄, 본업은 프로그래머💻  
-배우고 싶은 것이 많은 학생입니다.
-
 # Projects
 
 [![iloa.gg](https://img.shields.io/badge/iloa.gg-50CE97?style=for-the-badge&logoColor=fff)](https://iloa.gg)  
