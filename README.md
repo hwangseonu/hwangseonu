@@ -1,53 +1,76 @@
-# Profile
+```sh
+$ whoami --json
+```
+
 ```json
 {
-    "name": {
-        "kor": "황선우",
-        "eng": "hwangseonu",
-        "jpn": "善宇(ゼン-ウ)"
-    }
+  "name": "황선우",
+  "handle": "hwangseonu",
+  "email": "contact@kinoshita.dev",
+  "languages": {
+    "ko": "한국어",
+    "ja": "日本語",
+    "en": "beginner"
+  },
+  "focus": [
+    "AI",
+    "Full Stack",
+    "Product Engineering"
+  ]
 }
 ```
 
+# Education
+
+- 대덕소프트웨어마이스터고등학교 정보보안과 중퇴
+- Best of the Best (차세대 보안 리더 양성 프로그램) 8기 보안제품개발트랙 수료
+- 소프트웨어마에스트로 11기 수료
+
 # Projects
 
-[![iloa.gg](https://img.shields.io/badge/iloa.gg-50CE97?style=for-the-badge&logoColor=fff)](https://iloa.gg)  
-[![Gin-Restful](https://img.shields.io/badge/GinRestful-29BEB0?style=for-the-badge&logo=go&logoColor=fff)](https://github.com/hwangseonu/gin-restful)  
-[![KIWITALK](https://img.shields.io/badge/KIWITALK-F0DB4F?style=for-the-badge&logo=JavaScript&logoColor=fff)](https://github.com/KiwiTalk/KiwiTalk)  
+## [iloa.gg](https://iloa.gg)
+
+리빌딩 프로젝트에 백엔드 보조 개발자로 참여했습니다. 이후 게임 패치에 따른 백엔드 유지보수를 담당하고, 직접 게임을 플레이하며 느낀 필요를 바탕으로 숙제관리 기능을 개발했습니다.
+
+- **수집품 랭킹 API 개발 및 집계 구조 개선**: 원정대와 수집품 데이터를 JOIN하고 SUM으로 점수를 계산하던 API에 비정규화를 적용했습니다. 이후에도 성능 문제가 남아, 실시간 갱신이 필수적이지 않다고 판단하고 랭킹 조회 전용 테이블을 분리해 2시간마다 전체 데이터를 배치로 집계하도록 전환했습니다.
+- **숙제관리의 캐릭터 레벨 갱신 시간 단축**: 대상 외의 원정대 내 캐릭터까지 갱신하고, 갱신 작업을 순차 처리하는 문제를 발견했습니다. 갱신 범위를 대상 캐릭터로 한정하고 병렬 처리하도록 변경해 소요 시간을 단축했습니다.
+- **캐릭터 통계 API 개발 및 DuckDB 도입 제안**: 통계 API를 개발하며 기존 쿼리 방식의 한계를 느껴 DuckDB 도입을 제안했습니다.
+- **에이전트 기반 개발을 위한 문서화**: `AGENTS.md`에 프로젝트 구성, 패키지 계층, 코딩 규칙, 모노레포 규칙을 정리했습니다.
+
+## [gin-restful](https://github.com/hwangseonu/gin-restful)
+
+Flask-RESTful에서 착안한 Go 라이브러리로, Gin에서 리소스 단위로 REST API를 구현할 수 있도록 개발했습니다. 리소스가 구현한 HTTP 메서드에 해당하는 라우트를 자동으로 등록합니다.
+
+- **메서드별 인터페이스 분리**: `Lister`, `Getter`, `Poster`, `Putter`, `Patcher`, `Deleter`를 독립된 인터페이스로 제공해 필요한 메서드만 구현할 수 있도록 했습니다.
+- **요청 바인딩 및 에러 응답 처리**: 제네릭 기반의 `Bind[T]`, `MustBind[T]`와 `HTTPError`, `Abort()`를 제공해 요청 데이터 바인딩과 에러 응답 처리를 지원합니다.
+- **기존 Gin 코드와의 호환**: `gin.IRouter`를 받아 라우트 그룹과 미들웨어를 활용하고, 일반 Gin 핸들러와 리소스 기반 API를 함께 사용할 수 있도록 했습니다.
 
 # Skills
 
 ## Languages
-![Go](https://img.shields.io/badge/Go-29BEB0?style=for-the-badge&logo=go&logoColor=fff)
-![Kotlin](https://img.shields.io/badge/Kotlin-B125EA?style=for-the-badge&logo=kotlin&logoColor=fff)
-![Java](https://img.shields.io/badge/Java-f89820?style=for-the-badge&logo=openjdk&logoColor=fff)
-![Python](https://img.shields.io/badge/Python-306998?style=for-the-badge&logo=python&logoColor=fff)
-![PHP](https://img.shields.io/badge/Php-8993be?style=for-the-badge&logo=php&logoColor=fff)
-![JavaScript](https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=javascript&logoColor=fff)
-![TypeScript](https://img.shields.io/badge/TypeScript-007acc?style=for-the-badge&logo=typescript&logoColor=fff)
-![Swift](https://img.shields.io/badge/Swift-dd5f28?style=for-the-badge&logo=swift&logoColor=fff)
+
+`Go` `Kotlin` `Java` `TypeScript` `JavaScript` `Python` `PHP` `Swift`
 
 ## Backend
-![Spring](https://img.shields.io/badge/Spring-5e8d5a?style=for-the-badge&logo=spring&logoColor=fff)
-![Ktor](https://img.shields.io/badge/Ktor-B125EA?style=for-the-badge&logo=kotlin&logoColor=fff)
-![Gin](https://img.shields.io/badge/gin-29BEB0?style=for-the-badge&logo=go&logoColor=fff)
-![Echo](https://img.shields.io/badge/echo-29BEB0?style=for-the-badge&logo=go&logoColor=fff)
-![GRPC](https://img.shields.io/badge/gRPC-29BEB0?style=for-the-badge&logo=go&logoColor=fff)
-![express](https://img.shields.io/badge/express-3c873a?style=for-the-badge&logo=express&logoColor=fff)
-![koa](https://img.shields.io/badge/koa-EF4444?style=for-the-badge&logo=koa&logoColor=fff)
+
+`Gin` `Echo` `gRPC` `fasthttp` `Spring` `Ktor` `NestJS` `Express` `Koa` `Flask` `Django` `Laravel`
 
 ## Frontend
-![React](https://img.shields.io/badge/React-61DBFB?style=for-the-badge&logo=react&logoColor=fff)
-![Vue](https://img.shields.io/badge/Vue-41b883?style=for-the-badge&logo=vuedotjs&logoColor=fff)
+
+`React` `Svelte` `Vue` `jQuery`
 
 ## Mobile
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=fff)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-dd5f28?style=for-the-badge&logo=swift&logoColor=fff)
-![ReactNative](https://img.shields.io/badge/ReactNative-61DBFB?style=for-the-badge&logo=React&logoColor=fff)
 
-## Others
-![Git](https://img.shields.io/badge/Git-f1502f?style=for-the-badge&logo=Git&logoColor=fff)
-![Docker](https://img.shields.io/badge/Docker-0db7ed?style=for-the-badge&logo=Docker&logoColor=fff)
-![MongoDB](https://img.shields.io/badge/MongoDB-4db33d?style=for-the-badge&logo=MongoDB&logoColor=fff)
-![MariaDB](https://img.shields.io/badge/MariaDB-00758f?style=for-the-badge&logo=MariaDB&logoColor=fff)
-![Redis](https://img.shields.io/badge/Redis-d82c20?style=for-the-badge&logo=Redis&logoColor=fff)
+`Jetpack Compose` `Kotlin` `SwiftUI` `React Native`
+
+## Databases & Caching
+
+`MySQL` `MariaDB` `PostgreSQL` `MongoDB` `Redis` `DuckDB`
+
+## AI Tools & Platforms
+
+`Claude` `Codex` `OpenRouter` `Orca` `T3 Code`
+
+## Tools & Infrastructure
+
+`Git` `Docker`
