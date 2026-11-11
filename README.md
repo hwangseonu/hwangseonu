@@ -50,7 +50,7 @@ $ whoami --json
 - 리빌딩에 백엔드 개발자 및 프론트엔드 보조 개발자로 참여
 - 숙제 관리 기능 개발
 - 수집품 도메인 개발
-- 게임 패치에 따른 백엔드 유지보수
+- 게임 패치에 따른 백엔드 유지보수 및 신기능 개발
 
 ## [gin-restful](https://github.com/hwangseonu/gin-restful)
 
