@@ -20,7 +20,7 @@ $ whoami --json
 }
 ```
 
-# Experience
+# Careers
 
 ## 캔디드
 
